@@ -1,0 +1,197 @@
+
+			html, body{
+				height: 100%;
+				padding: 0;
+		
+			}
+			.card-header{
+				background-color: #eff1f1 !important;
+				padding: 0 !important;
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				height: 120px;
+				position: relative;
+				display: flex;
+				justify-content: center;
+				text-align:center;
+			}
+			.card{
+				overflow: hidden;
+				border:0 !important;
+				width: 100%;
+				
+			}
+			.profile_pic{
+				position: absolute;
+				bottom: -50px;
+				height: 112px;
+				width: 112px;
+				padding: 5px;
+				border: 2px solid #f39c12;
+				border-radius: 50%;
+			}
+			.card-body{
+				padding-top: 55px !important;
+			}
+			.profile_pic img{
+				height: 100px;
+				width: 100px;
+				border-radius: 50%;
+			}
+			.name_container{
+				display: flex;
+				justify-content: center;
+			
+			}
+			.name{
+				font-size: 20px;
+				font-weight: 700;
+				color: gray;
+				position: relative;
+			}
+		
+			.mobileNumber{
+				display: flex;
+				justify-content: center;
+				font-size: 15px;
+				color: rgb(90, 89, 89);
+			}
+			.address,.emailId{
+				padding-top: 20px;
+				display: flex;
+			
+			}
+			.address_btn,.email_btn{
+		
+				padding: 7px;
+				color: rgb(63, 62, 62);
+				border-radius: 12px;
+				cursor: pointer;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+			}
+
+			.address_btn::before{
+				font-family: fontawesome, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+				content: "\f041";
+				font-weight: 600;
+				margin-right: 7px;
+
+			}
+			
+            
+
+			.emailId_btn::before{
+				font-family: fontawesome, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+				content:"\f003";
+				font-weight: 600;
+				margin-right: 7px;
+			
+			}
+			
+			.info_container{
+				padding-top: 20px;
+				display: flex;
+				justify-content: space-around;
+				flex-direction: row;
+			}
+			.info{
+				display: flex;
+				flex-direction: column;
+			}
+			.info p:first-child{
+				margin-bottom: 0;
+				font-size: 12px;
+				color: gray;
+				text-transform: uppercase;
+				text-align: center;
+			}
+			.info p:last-child{
+				margin-bottom: 0;
+				font-size: 20px;
+				font-weight: 700;
+				color: gray;
+				text-transform: uppercase;
+				text-align: center;
+			}
+			.card-footer{
+				padding: 0 !important;
+				background: #fff !important;
+				display: flex;
+				border-top: 0 !important;
+			}
+			.delete{
+				display: flex;
+				justify-content: center;
+				padding: 10px;
+				width: 50%;
+				text-transform: uppercase;
+				
+				cursor: pointer;
+				border-bottom-right-radius: calc(0.25rem - 1px);
+			}
+
+			.delete::before{
+				font-family: fontawesome;
+				content:"\f014";
+				font-weight: 400;
+				margin-right: 5px;
+				color: #4293fc;
+			}
+		.share{
+				display: flex;
+				justify-content: center;
+				padding: 10px;
+				width: 50%;
+				text-transform: uppercase;
+				cursor: pointer;
+				border-bottom-left-radius: calc(0.25rem - 1px);
+				
+			}
+			.share::before{
+				font-family: fontawesome;
+				content:"\f1e0";
+				margin-right: 5px;
+				font-weight: 400;
+				color: #4293fc;
+			}
+
+            .block{
+				display: flex;
+				justify-content: center;
+				padding: 10px;
+				width: 50%;
+				text-transform: uppercase;
+				cursor: pointer;
+				border-bottom-left-radius: calc(0.25rem - 1px);
+				
+			}
+			.block::before{
+				font-family: fontawesome;
+				content:"\f05e";
+				color: #4293fc;
+				margin-right: 5px;
+				font-weight: 400;
+			}
+
+			.edit{
+				display: flex;
+				justify-content: center;
+				padding: 10px;
+				width: 50%;
+				text-transform: uppercase;
+				cursor: pointer;
+				border-bottom-left-radius: calc(0.25rem - 1px);
+				
+			}
+			.back{
+				display: flex;
+				justify-content: left;
+				padding: 10px;
+				
+				text-transform: uppercase;
+				cursor: pointer;
+				border-bottom-left-radius: calc(0.25rem - 1px);
+				
+			}
+			

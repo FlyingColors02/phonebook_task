@@ -1,0 +1,11 @@
+export const USER_LOGIN = "USER_LOGIN";
+export const LOADING = "LOADING";
+export const USER_REGISTRATION = "USER_REGISTER";
+export const LOGGED_IN_USER = "LOGGED_IN_USER";
+export const PASSWORD = "PASSWORD";
+export const USER_NAME = "USER_NAME";
+export const MOBILE_NUMBER = "MOBILE_NUMBER";
+export const ADDRESS = "ADDRESS";
+export const USER_ERROR = "USER_ERROR";
+export const DELETE_USER_ACCOUNT = "DELETE_USER_ACCOUNT";
+export const LOG_OUT = "LOG_OUT";

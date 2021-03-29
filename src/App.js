@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React,{Component} from "react";
+import { Route, Switch ,Redirect} from "react-router-dom";
+import ContactList from "./Components/contactList";
+import Login from "./Components/login";
+import Register from "./Components/registration";
+import AddContact from "./Components/addContact";
+import EditContact from "./Components/editContact";
+import IndividualContactDetails from "./Components/individualContactDetails";
+import PrivateRoute from "./Shared/PrivateRoute/userPrivateRoute";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component{
+    render(){
+        return(
+            <div>
+                
+                <Route path="/login" component={Login}/>
+                <Route path="/" exact component={Login}/>
+                <Route path="/register" component={Register}/>
+                <PrivateRoute path="/contactList" component={ContactList}/>
+                <PrivateRoute path="/addContact" component={AddContact}/>
+                <PrivateRoute path="/editContact/:id" component={EditContact}/>
+                <PrivateRoute path="/contactDetails/:id" component={IndividualContactDetails}/>
+                {/* <Redirect path="/signIn"/> */}
+                
+            </div>
+        )
+    }
 }
-
 export default App;
